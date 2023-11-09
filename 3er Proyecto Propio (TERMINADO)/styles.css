@@ -1,0 +1,137 @@
+:root {
+/*Primary  */
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+/*Neutral  */
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--hover: hsl(135, 62%, 19%);
+}
+html{
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px
+}
+
+main > *{
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+@media (min-width: 700px) {
+    .contenedor{
+        width: 62rem;
+        height: 40rem;
+        background-color: var(--White);
+        display: flex;
+        border-radius: 1rem;
+    }
+}
+@media (min-width: 150px) {
+    .seccion{
+        width: 30rem;
+        height: 40rem;
+        background-color: var(--White);
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+}
+@media (min-width: 150px) {
+    .producto img {
+        border-radius: 1rem 1rem 0rem 0rem; 
+    }
+}
+@media (min-width: 700px) {
+    .producto img {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+}
+
+img {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.producto {
+    display: flex;
+    width: 30rem;
+}
+
+
+
+.contenedor .seccion {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.contenedor .seccion, h1, h2, h3, p {
+    margin: 0%;
+}
+h1 {
+    color: var(--Very-dark-blue);
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+}
+h2 {
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    padding: 20px 0px 10px 0px;
+}
+p {
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    font-size: 13px;
+}
+h3 {
+    color: var(--Dark-cyan);
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Fraunces', serif;;
+}
+h3 span{
+    color: var(--Dark-grayish-blue);
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 8px;
+    font-family: 'Fraunces', serif;
+}
+.carrito{
+    border-radius: 10px;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 40px;
+}
+.carrito:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+h4 {
+    color: var(--White);
+    font-size: 12px;
+    padding-left: 8px;
+}
