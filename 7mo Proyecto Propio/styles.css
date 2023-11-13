@@ -1,0 +1,112 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --purple:  hsl(245, 39%, 55%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+}
+.contenedor {
+    max-width: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 10rem 0;
+    border-radius: 2rem;
+}
+.contenedor__imagen img {
+    width: 36rem;
+    border-radius: 2rem 2rem 0 0;
+}
+.contenedor__texto, h1, p {
+    text-align: center;
+    color: var(--Dark-blue);
+}
+.contenedor__texto h1 {
+    font-size: 2.5rem;
+}
+.contenedor__texto {
+    padding: 0 4.7rem;
+}
+h2, h3, h4 {
+    font-size: 1.5rem;
+}
+
+.contenedor__plan {
+    display: flex;
+    width: 30rem;
+    height: 6rem;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem;
+}
+.contenedor__plan img {
+    width: 4rem;
+    height: 4rem;
+}
+.contenedor__plan h2 {
+    color: var(--Dark-blue);
+    padding-right: 7rem;
+}
+.contenedor__plan span {
+    color: var(--Desaturated-blue);
+    font-size: 1.2rem;
+}
+.contenedor__plan a {
+    color: var(--Bright-blue);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.contenedor__plan a:hover {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+
+.contenedor__boton {
+    background-color: var(--Bright-blue);
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    color: white;
+    height: 4.5rem;
+    box-shadow: -1px 33px 43px -16px rgba(33,96,214,0.88);
+}
+.contenedor__boton:hover {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+.contenedor__foooter {
+    color: var(--Desaturated-blue);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.contenedor__foooter:hover {
+    color: var(--Dark-blue);
+    font-weight: bold;
+    cursor: pointer;
+}
