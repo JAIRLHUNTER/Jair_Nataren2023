@@ -1,0 +1,88 @@
+
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+$fuente: 'Kumbh Sans', sans-serif;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+}
+* {
+    font-family: $fuente;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    &__box {
+        max-width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+        border-radius: 2rem;
+    }
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-evenly;
+    }
+    p {
+        grid-row: 2/3;
+        margin: 0;
+        color: $Dark-grayish-blue;
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: .2rem;
+        padding: .5rem 0 2.5rem;
+    }
+    &__card {
+        border-radius: 2rem 2rem 0 0;
+    }
+    &__victor {
+        border-radius: 6rem;
+        border: .5rem solid white;
+        margin-top: -7.5rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+        color: $Very-dark-desaturated-blue;
+        margin: 0;
+    }
+    span {
+        font-size: 1.7rem;
+        color: $Dark-grayish-blue;
+        font-weight: 400;
+    }
+    h4 {
+        color: $Dark-gray;
+        font-weight: 400;
+        margin: 0;
+        padding: 1rem 0 2.5rem;
+    }
+    &__line {
+        height: 1px;
+        background-color: lightgrey;
+        margin: 0 0 1rem;
+    }
+    h3 {
+        margin: 0;
+        color: $Very-dark-desaturated-blue;
+        letter-spacing: .1rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+}
